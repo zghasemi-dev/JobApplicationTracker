@@ -1,0 +1,9 @@
+# Reflection – Job Application Tracker
+
+**1. Hur hjälpte LINQ dig att skriva renare kod?**
+
+LINQ hjälpte mig att filtrera, sortera och räkna ansökningar på ett enkelt sätt. Till exempel använde jag Where för att filtrera ansökningar efter status, OrderBy för att sortera efter datum och Count för att räkna ansökningar. Koden blev kortare och lättare att läsa.
+
+**2. Vilken del av projektet var mest utmanande, och hur löste du den?**
+
+Det mest utmanande var att strukturera programmet med klasser, metoder och en meny. Jag löste det genom att dela upp koden i separata filer och testa programmet steg för steg. Jag använde också Git och GitHub för att spara ändringar och arbeta med branches och pull requests.
