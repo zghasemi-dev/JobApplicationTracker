@@ -52,7 +52,8 @@ public class JobManager
         AddJob(application);
     }
 
-    // Displays all applications.
+    
+    // Displays all applications with colored statuses.
     public void ShowAll()
     {
         if (Applications.Count == 0)
@@ -63,9 +64,24 @@ public class JobManager
 
         foreach (var application in Applications)
         {
+            if (application.Status == ApplicationStatus.Offer)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+            }
+            else if (application.Status == ApplicationStatus.Rejected)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+            }
+            else
+            {
+                Console.ResetColor();
+            }
+
             Console.WriteLine(application.GetSummary());
+            Console.ResetColor();
         }
     }
+
 
     // Filters applications by status using LINQ.
     public void ShowByStatus(ApplicationStatus status)
